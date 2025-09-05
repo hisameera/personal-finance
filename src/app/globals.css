@@ -1,16 +1,14 @@
 @import "tailwindcss";
 
+
 :root {
-  --background: #ffffff;
+  --background: #fff;
   --foreground: #171717;
+  --color-orange: #ff9800;
+  --color-green: #388e3c;
+  --color-white: #fff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -23,4 +21,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.indian-flag {
+  background: linear-gradient(90deg, var(--color-orange) 33%, var(--color-white) 33% 66%, var(--color-green) 66%);
+  height: 16px;
+  width: 100%;
+  margin-bottom: 2rem;
 }
