@@ -1,7 +1,7 @@
 ---
 title: "ITR-1 Illustration: Salary Income Tax Calculation"
 date: "2025-09-03"
-description: "Step-by-step ITR-1 examples for salary incomes of ₹10,00,000 and ₹20,00,000."
+description: "Step-by-step ITR-1 examples for salary incomes of ₹20,00,000."
 slug: "itr1-illustration"
 coverImage: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
 ---
@@ -22,7 +22,6 @@ This post provides a step-by-step illustration of how to fill ITR-1 for salaried
 
 ## Example: Salary ₹20,00,000
 
-## Example: Salary ₹20,00,000
 
 | Particulars                | Amount (₹) |
 |---------------------------|------------|

@@ -7,7 +7,7 @@ export default async function BlogPage() {
     const client = createClient();
     const entries = await client.getEntries({
         content_type: 'blogPost', // Content type ID (check Contentful dashboard)
-        order: '-fields.date',
+        order: ['-fields.date'],
     });
     const posts = entries.items;
 
