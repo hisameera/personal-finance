@@ -5,8 +5,10 @@ export default function Home() {
       {/* Header */}
       <header className="w-full bg-orange-500 text-white py-4 shadow-md flex justify-between items-center px-8">
         <div className="flex items-center gap-3">
-          <img src="/PF_logo-nb.jpeg" alt="Personal Finance Logo" className="h-10 w-10 rounded-full shadow" />
-          <span className="text-2xl font-bold tracking-wide">Personal Finance India</span>
+          <a href="/" className="flex items-center gap-3">
+            <img src="/PF_logo-nb.jpeg" alt="Personal Finance Logo" className="h-10 w-10 rounded-full shadow cursor-pointer" />
+            <span className="text-2xl font-bold tracking-wide">Personal Finance India</span>
+          </a>
         </div>
         <nav className="space-x-6">
           <a href="/" className="hover:underline">Home</a>
@@ -21,9 +23,9 @@ export default function Home() {
       {/* Full-width Hero Image */}
       <div className="w-full">
         <img
-          src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
-          alt="Finance Hero"
-          className="w-full h-80 object-cover mb-0 shadow-lg"
+          src="https://plus.unsplash.com/premium_photo-1681487769650-a0c3fbaed85a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmluYW5jZXxlbnwwfHwwfHx8MA%3D%3D" // Hero image
+          alt="Hero Image"
+          className="w-full h-[400px] md:h-[500px] object-cover mb-0 shadow-lg"
         />
       </div>
 
@@ -64,8 +66,8 @@ export default function Home() {
           </div>
           <div className="flex-1 flex items-center justify-center">
             <img
-              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
-              alt="Home Card Finance"
+              src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Home section image
+              alt="Home Section Image"
               className="shadow-lg w-full h-full object-cover"
             />
           </div>
@@ -75,8 +77,8 @@ export default function Home() {
         <div className="w-full flex flex-col md:flex-row items-stretch gap-0 md:gap-0 mt-16">
           <div className="flex-1 flex items-center justify-center">
             <img
-              src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"
-              alt="About Card Finance"
+              src="https://images.unsplash.com/photo-1546188994-07c34f6e5e1b?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // About section image
+              alt="About Section Image"
               className="rounded-l-xl shadow-lg w-full h-full object-cover"
             />
           </div>
