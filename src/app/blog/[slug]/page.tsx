@@ -2,6 +2,8 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+
+import { INLINES } from '@contentful/rich-text-types';
 import { createClient } from '../../../lib/contentful';
 
 export default async function BlogPostPage({ params }: { params: { slug: string } }) {
@@ -55,7 +57,23 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
                 )}
                 {postBody && (
                     <article className="prose prose-lg max-w-none">
-                        {documentToReactComponents(postBody as any)}
+                        {documentToReactComponents(postBody as any, {
+                            renderNode: {
+                                [INLINES.HYPERLINK]: (node, children) => {
+                                    const url = node.data.uri;
+                                    const isExternal = url.startsWith('http');
+                                    return (
+                                        <a
+                                            href={url}
+                                            target={isExternal ? '_blank' : undefined}
+                                            rel={isExternal ? 'noopener noreferrer' : undefined}
+                                        >
+                                            {children}
+                                        </a>
+                                    );
+                                },
+                            },
+                        })}
                     </article>
                 )}
             </div>
